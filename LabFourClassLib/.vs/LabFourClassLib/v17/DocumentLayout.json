@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Sifat\\Drive F\\DevOps\\Lab_4\\AzureDevOps-Lab4\\LabFourClassLib\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A9177A1F-3815-4759-A9B8-3CC9D6E9CFED}|LabFourClassLib\\LabFourClassLib.csproj|c:\\sifat\\drive f\\devops\\lab_4\\azuredevops-lab4\\labfourclasslib\\labfourclasslib\\stringextensionlibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9177A1F-3815-4759-A9B8-3CC9D6E9CFED}|LabFourClassLib\\LabFourClassLib.csproj|solutionrelative:labfourclasslib\\stringextensionlibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StringExtensionLibrary.cs",
+              "DocumentMoniker": "C:\\Sifat\\Drive F\\DevOps\\Lab_4\\AzureDevOps-Lab4\\LabFourClassLib\\LabFourClassLib\\StringExtensionLibrary.cs",
+              "RelativeDocumentMoniker": "LabFourClassLib\\StringExtensionLibrary.cs",
+              "ToolTip": "C:\\Sifat\\Drive F\\DevOps\\Lab_4\\AzureDevOps-Lab4\\LabFourClassLib\\LabFourClassLib\\StringExtensionLibrary.cs",
+              "RelativeToolTip": "LabFourClassLib\\StringExtensionLibrary.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T05:38:04.026Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
