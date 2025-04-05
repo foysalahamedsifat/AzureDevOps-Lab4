@@ -1,0 +1,12 @@
+C:\Sifat\Drive F\DevOps\Lab_4\AzureDevOps-Lab4\LabFourClassLib\LabFourClassLib\bin\Debug\net8.0\LabFourClassLib.deps.json
+C:\Sifat\Drive F\DevOps\Lab_4\AzureDevOps-Lab4\LabFourClassLib\LabFourClassLib\bin\Debug\net8.0\LabFourClassLib.dll
+C:\Sifat\Drive F\DevOps\Lab_4\AzureDevOps-Lab4\LabFourClassLib\LabFourClassLib\bin\Debug\net8.0\LabFourClassLib.pdb
+C:\Sifat\Drive F\DevOps\Lab_4\AzureDevOps-Lab4\LabFourClassLib\LabFourClassLib\obj\Debug\net8.0\LabFourClassLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Sifat\Drive F\DevOps\Lab_4\AzureDevOps-Lab4\LabFourClassLib\LabFourClassLib\obj\Debug\net8.0\LabFourClassLib.AssemblyInfoInputs.cache
+C:\Sifat\Drive F\DevOps\Lab_4\AzureDevOps-Lab4\LabFourClassLib\LabFourClassLib\obj\Debug\net8.0\LabFourClassLib.AssemblyInfo.cs
+C:\Sifat\Drive F\DevOps\Lab_4\AzureDevOps-Lab4\LabFourClassLib\LabFourClassLib\obj\Debug\net8.0\LabFourClassLib.csproj.CoreCompileInputs.cache
+C:\Sifat\Drive F\DevOps\Lab_4\AzureDevOps-Lab4\LabFourClassLib\LabFourClassLib\obj\Debug\net8.0\LabFourClassLib.sourcelink.json
+C:\Sifat\Drive F\DevOps\Lab_4\AzureDevOps-Lab4\LabFourClassLib\LabFourClassLib\obj\Debug\net8.0\LabFourClassLib.dll
+C:\Sifat\Drive F\DevOps\Lab_4\AzureDevOps-Lab4\LabFourClassLib\LabFourClassLib\obj\Debug\net8.0\refint\LabFourClassLib.dll
+C:\Sifat\Drive F\DevOps\Lab_4\AzureDevOps-Lab4\LabFourClassLib\LabFourClassLib\obj\Debug\net8.0\LabFourClassLib.pdb
+C:\Sifat\Drive F\DevOps\Lab_4\AzureDevOps-Lab4\LabFourClassLib\LabFourClassLib\obj\Debug\net8.0\ref\LabFourClassLib.dll

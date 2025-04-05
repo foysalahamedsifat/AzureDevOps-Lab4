@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Sifat\\Drive F\\DevOps\\Lab_4\\AzureDevOps-Lab4\\LabFourClassLib\\LabFourClassLib\\LabFourClassLib.csproj": {}
+    "C:\\Sifat\\Drive F\\DevOps\\Lab_4\\AzureDevOps-Lab4\\LabFourClassLib\\StringExtensionApp\\StringExtensionApp.csproj": {}
   },
   "projects": {
-    "C:\\Sifat\\Drive F\\DevOps\\Lab_4\\AzureDevOps-Lab4\\LabFourClassLib\\LabFourClassLib\\LabFourClassLib.csproj": {
+    "C:\\Sifat\\Drive F\\DevOps\\Lab_4\\AzureDevOps-Lab4\\LabFourClassLib\\StringExtensionApp\\StringExtensionApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Sifat\\Drive F\\DevOps\\Lab_4\\AzureDevOps-Lab4\\LabFourClassLib\\LabFourClassLib\\LabFourClassLib.csproj",
-        "projectName": "LabFourClassLib",
-        "projectPath": "C:\\Sifat\\Drive F\\DevOps\\Lab_4\\AzureDevOps-Lab4\\LabFourClassLib\\LabFourClassLib\\LabFourClassLib.csproj",
+        "projectUniqueName": "C:\\Sifat\\Drive F\\DevOps\\Lab_4\\AzureDevOps-Lab4\\LabFourClassLib\\StringExtensionApp\\StringExtensionApp.csproj",
+        "projectName": "StringExtensionApp",
+        "projectPath": "C:\\Sifat\\Drive F\\DevOps\\Lab_4\\AzureDevOps-Lab4\\LabFourClassLib\\StringExtensionApp\\StringExtensionApp.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Sifat\\Drive F\\DevOps\\Lab_4\\AzureDevOps-Lab4\\LabFourClassLib\\LabFourClassLib\\obj\\",
+        "outputPath": "C:\\Sifat\\Drive F\\DevOps\\Lab_4\\AzureDevOps-Lab4\\LabFourClassLib\\StringExtensionApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +50,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "LabFourClassLib": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

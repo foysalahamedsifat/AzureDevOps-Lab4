@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "A42oeUS6oVE=",
+  "success": true,
+  "projectFilePath": "C:\\Sifat\\Drive F\\DevOps\\Lab_4\\AzureDevOps-Lab4\\LabFourClassLib\\StringExtensionApp\\StringExtensionApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\labfourclasslib\\1.0.0\\labfourclasslib.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

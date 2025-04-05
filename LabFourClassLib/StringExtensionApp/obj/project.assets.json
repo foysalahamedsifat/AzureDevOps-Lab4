@@ -1,11 +1,35 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "LabFourClassLib/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/LabFourClassLib.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/LabFourClassLib.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "LabFourClassLib/1.0.0": {
+      "sha512": "Ukk96xR8azZweaVKQW+reO5CzbGkSyB/4FdSwq1Y31+ziqD8D85DcigA0/NXRqS/EINsT9MbW6xrOq5HEJj1kA==",
+      "type": "package",
+      "path": "labfourclasslib/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        "labfourclasslib.1.0.0.nupkg.sha512",
+        "labfourclasslib.nuspec",
+        "lib/net8.0/LabFourClassLib.dll"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "LabFourClassLib >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\user\\.nuget\\packages\\": {},
@@ -14,11 +38,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Sifat\\Drive F\\DevOps\\Lab_4\\AzureDevOps-Lab4\\LabFourClassLib\\LabFourClassLib\\LabFourClassLib.csproj",
-      "projectName": "LabFourClassLib",
-      "projectPath": "C:\\Sifat\\Drive F\\DevOps\\Lab_4\\AzureDevOps-Lab4\\LabFourClassLib\\LabFourClassLib\\LabFourClassLib.csproj",
+      "projectUniqueName": "C:\\Sifat\\Drive F\\DevOps\\Lab_4\\AzureDevOps-Lab4\\LabFourClassLib\\StringExtensionApp\\StringExtensionApp.csproj",
+      "projectName": "StringExtensionApp",
+      "projectPath": "C:\\Sifat\\Drive F\\DevOps\\Lab_4\\AzureDevOps-Lab4\\LabFourClassLib\\StringExtensionApp\\StringExtensionApp.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Sifat\\Drive F\\DevOps\\Lab_4\\AzureDevOps-Lab4\\LabFourClassLib\\LabFourClassLib\\obj\\",
+      "outputPath": "C:\\Sifat\\Drive F\\DevOps\\Lab_4\\AzureDevOps-Lab4\\LabFourClassLib\\StringExtensionApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -57,6 +81,12 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "LabFourClassLib": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

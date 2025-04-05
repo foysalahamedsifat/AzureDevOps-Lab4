@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "StringExtensionApp/1.0.0": {
+        "dependencies": {
+          "LabFourClassLib": "1.0.0"
+        },
+        "runtime": {
+          "StringExtensionApp.dll": {}
+        }
+      },
+      "LabFourClassLib/1.0.0": {
+        "runtime": {
+          "lib/net8.0/LabFourClassLib.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "StringExtensionApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LabFourClassLib/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ukk96xR8azZweaVKQW+reO5CzbGkSyB/4FdSwq1Y31+ziqD8D85DcigA0/NXRqS/EINsT9MbW6xrOq5HEJj1kA==",
+      "path": "labfourclasslib/1.0.0",
+      "hashPath": "labfourclasslib.1.0.0.nupkg.sha512"
+    }
+  }
+}
