@@ -14,16 +14,16 @@ steps:
       packageType: 'sdk'
       version: '8.0.x'
 
-  # Restore dependencies
-  - script: dotnet restore
+  # Restore dependencies (use the solution file)
+  - script: dotnet restore LabFourClassLib/LabFourClassLib.sln
     displayName: 'Restore NuGet packages'
 
-  # Build the project
-  - script: dotnet build --configuration $(buildConfiguration)
+  # Build the project (use the solution file)
+  - script: dotnet build --configuration $(buildConfiguration) LabFourClassLib/LabFourClassLib.sln
     displayName: 'Build project'
 
-  # Pack the NuGet package
-  - script: dotnet pack --configuration $(buildConfiguration) -o $(Build.ArtifactStagingDirectory)
+  # Pack the NuGet package (use the solution file)
+  - script: dotnet pack --configuration $(buildConfiguration) -o $(Build.ArtifactStagingDirectory) LabFourClassLib/LabFourClassLib.sln
     displayName: 'Pack NuGet package'
 
   # Push the NuGet package to Azure Artifacts feed
