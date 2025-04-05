@@ -1,0 +1,28 @@
+trigger:
+  - main
+
+pool:
+  name: Self-Hosted-Agent
+
+steps:
+  - task: UseDotNet@2
+    inputs:
+      packageType: 'sdk'
+      version: '8.0.x'
+
+  - script: dotnet restore
+    displayName: 'Restore dependencies'
+
+  - script: dotnet build --configuration Release
+    displayName: 'Build project'
+
+  - script: dotnet pack --configuration Release -o $(Build.ArtifactStagingDirectory)
+    displayName: 'Pack NuGet package'
+
+  - task: NuGetCommand@2
+    inputs:
+      command: push
+      packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
+      nuGetFeedType: 'internal'
+      publishVstsFeed: 'AzureDevOpsLab4'
+    displayName: 'Push package to Azure Artifacts'
