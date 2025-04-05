@@ -1,28 +1,36 @@
 trigger:
-  - main
+  - main  # or your default branch name
 
 pool:
-  name: Default
+  name: Default  # Use your self-hosted agent pool
+
+variables:
+  buildConfiguration: 'Release'
 
 steps:
+  # Install .NET 8 SDK
   - task: UseDotNet@2
     inputs:
       packageType: 'sdk'
       version: '8.0.x'
 
+  # Restore dependencies
   - script: dotnet restore
-    displayName: 'Restore dependencies'
+    displayName: 'Restore NuGet packages'
 
-  - script: dotnet build --configuration Release
+  # Build the project
+  - script: dotnet build --configuration $(buildConfiguration)
     displayName: 'Build project'
 
-  - script: dotnet pack --configuration Release -o $(Build.ArtifactStagingDirectory)
+  # Pack the NuGet package
+  - script: dotnet pack --configuration $(buildConfiguration) -o $(Build.ArtifactStagingDirectory)
     displayName: 'Pack NuGet package'
 
+  # Push the NuGet package to Azure Artifacts feed
   - task: NuGetCommand@2
     inputs:
-      command: push
+      command: 'push'
       packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
       nuGetFeedType: 'internal'
-      publishVstsFeed: 'AzureDevOpsLab4'
+      publishVstsFeed: 'fsifat'  
     displayName: 'Push package to Azure Artifacts'
