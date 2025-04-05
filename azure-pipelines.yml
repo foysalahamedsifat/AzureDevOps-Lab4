@@ -1,11 +1,11 @@
 trigger:
-  - main  # or your default branch name
+  - main  # Trigger on changes to the main branch (or your default branch name)
 
 pool:
-  name: Default  # Use your self-hosted agent pool
+  name: Default  # Use your self-hosted agent pool, or 'Azure Pipelines' for Microsoft-hosted agents
 
 variables:
-  buildConfiguration: 'Release'
+  buildConfiguration: 'Release'  # Build configuration (can be 'Release' or 'Debug')
 
 steps:
   # Install .NET 8 SDK
@@ -26,11 +26,15 @@ steps:
   - script: dotnet pack --configuration $(buildConfiguration) -o $(Build.ArtifactStagingDirectory) LabFourClassLib/LabFourClassLib.sln
     displayName: 'Pack NuGet package'
 
+  # Authenticate with Azure Artifacts feed
+  - task: NuGetAuthenticate@1
+    displayName: 'Authenticate with Azure Artifacts feed'
+
   # Push the NuGet package to Azure Artifacts feed
   - task: NuGetCommand@2
     inputs:
       command: 'push'
-      packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
-      nuGetFeedType: 'internal'
-      publishVstsFeed: 'fsifat'  
+      packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'  # Make sure this matches your packed package
+      nuGetFeedType: 'internal'  # Azure Artifacts feed type
+      publishVstsFeed: 'fsifat'  # Ensure the correct feed name here
     displayName: 'Push package to Azure Artifacts'
